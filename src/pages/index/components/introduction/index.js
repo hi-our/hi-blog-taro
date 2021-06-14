@@ -18,7 +18,7 @@ function Introduction() {
       {/* 个人简绍 描述 */}
       <div className="desc">
         <FadeScrollComponentX className="desc-bitmap">
-          <ImageMax loading='lazy'  src="/images/bitmap@2x.png" maxWidth='1200' width='600' height='304' alt="bitmap" />
+          <ImageMax loading='lazy'  src="https://www.xiaoxili.com/images/bitmap@2x.png" maxWidth='1200' width='600' height='304' alt="bitmap" />
         </FadeScrollComponentX>
         <FadeScrollComponentY delay='0.4' className="desc-content">
           <div className="desc-content-group">
@@ -39,42 +39,42 @@ function Introduction() {
       <ul className="feature">
         <li>
           <FadeScrollComponentY delay="0.1">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-1@2x.png" alt="icon-1" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-1@2x.png" alt="icon-1" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>07</h3>
           <p>7年工作经验</p>
         </li>
         <li>
           <FadeScrollComponentY delay="0.2">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-2@2x.png" alt="icon-2" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-2@2x.png" alt="icon-2" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>12</h3>
           <p>12篇技术文章</p>
         </li>
         <li>
           <FadeScrollComponentY delay="0.3">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-3@2x.png" alt="icon-3" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-3@2x.png" alt="icon-3" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>01</h3>
           <p>1本技术小册</p>
         </li>
         <li>
           <FadeScrollComponentY delay="0.3">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-4@2x.png" alt="icon-4" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-4@2x.png" alt="icon-4" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>04</h3>
           <p>4个开源组件</p>
         </li>
         <li>
           <FadeScrollComponentY delay="0.2">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-5@2x.png" alt="icon-5" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-5@2x.png" alt="icon-5" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>20</h3>
           <p>20次技术分享</p>
         </li>
         <li>
           <FadeScrollComponentY delay="0.3">
-            <ImageMax loading='lazy' maxWidth="150" src="/images/icon-6@2x.png" alt="icon-6" width='75' height='60'/>
+            <ImageMax loading='lazy' maxWidth="150" src="https://www.xiaoxili.com/images/icon-6@2x.png" alt="icon-6" width='75' height='60'/>
           </FadeScrollComponentY>
           <h3>03</h3>
           <p>3个开源贡献</p>

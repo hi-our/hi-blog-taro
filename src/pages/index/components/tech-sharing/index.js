@@ -19,7 +19,7 @@ class TechSharing extends Component {
             <FadeScrollComponentY className="item-img" delay='0.1'>
               <ImageMax
                 loading='lazy'
-                src="/images/tech-share/tab-bar@2x.png"
+                src="https://www.xiaoxili.com/images/tech-share/tab-bar@2x.png"
                 alt="小程序 TabBar 创意动画"
                 maxWidth={760}
                 width='380'
@@ -30,7 +30,7 @@ class TechSharing extends Component {
             <div className="item-mark">
               <ImageMax
                 loading='lazy'
-                src="/images/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/icon-group@2x.png"
                 maxWidth="80"
                 width="40"
                 height="40"
@@ -43,7 +43,7 @@ class TechSharing extends Component {
             <FadeScrollComponentY className="item-img" delay='0.2'>
               <ImageMax
                 loading='lazy'
-                src="/images/tech-share/fun-img@2x.png"
+                src="https://www.xiaoxili.com/images/tech-share/fun-img@2x.png"
                 alt="小程序基础架构和功能优化"
                 maxWidth={760}
                 width='380'
@@ -54,7 +54,7 @@ class TechSharing extends Component {
             <div className="item-mark">
               <ImageMax
                 loading='lazy'
-                src="/images/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/icon-group@2x.png"
                 maxWidth="80"
                 width="40"
                 height="40"
@@ -67,7 +67,7 @@ class TechSharing extends Component {
             <FadeScrollComponentY className="item-img" delay='0.3'>
               <ImageMax
                 loading='lazy'
-                src="/images/tech-share/svg-img@2x.png"
+                src="https://www.xiaoxili.com/images/tech-share/svg-img@2x.png"
                 alt="小程序 TabBar 创意动画"
                 maxWidth={760}
                 width='380'
@@ -78,7 +78,7 @@ class TechSharing extends Component {
             <div className="item-mark">
               <ImageMax
                 loading='lazy'
-                src="/images/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/icon-group@2x.png"
                 maxWidth="80"
                 width="40"
                 height="40"

@@ -1,3 +1,5 @@
+const alias = require('./alias')
+
 const config = {
   projectName: 'hi-blog-taro',
   date: '2021-6-14',
@@ -16,6 +18,7 @@ const config = {
       pxtransformBlackList: [/page|h5|weui/]
     }]
   ],
+  alias,
   defineConstants: {
   },
   copy: {

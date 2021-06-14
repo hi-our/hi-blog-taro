@@ -52,13 +52,13 @@ export default function Banner({ heroPost = {}, noticeInView = () => {} }) {
           </LinkHtml>
           <FadeScrollComponentY direction='rtl' className="animation-little">
             <motion.div className="animation-bg" style={{ y: manY}}>
-              <ImageMax src='/images/banner-man.png' maxWidth='1118' width='559' height='511' alt='banner-animation' />
+              <ImageMax src='https://www.xiaoxili.com/images/banner-man.png' maxWidth='1118' width='559' height='511' alt='banner-animation' />
             </motion.div>
             <motion.div className="animation-earphone" style={{ y: earphoneY}}>
-              <ImageMax src='/images/banner-earphone.png' maxWidth='230' width='115' height='101' alt='banner-animation' />
+              <ImageMax src='https://www.xiaoxili.com/images/banner-earphone.png' maxWidth='230' width='115' height='101' alt='banner-animation' />
             </motion.div>
             <motion.div className="animation-gift" style={{ y: giftY }}>
-              <ImageMax src='/images/banner-gift.png' maxWidth='298' width='149' height='119' alt='banner-animation' />
+              <ImageMax src='https://www.xiaoxili.com/images/banner-gift.png' maxWidth='298' width='149' height='119' alt='banner-animation' />
             </motion.div>
           </FadeScrollComponentY>
         </section>

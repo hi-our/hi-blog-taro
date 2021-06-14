@@ -19,7 +19,7 @@ class OpenResources extends Component {
             <FadeScrollComponentY className="item-img" delay="0.3">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-3d-swiper@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-3d-swiper@2x.png"
                 maxWidth='104'
                 width="52"
                 height="52"
@@ -34,7 +34,7 @@ class OpenResources extends Component {
             <div className="item-mask">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
                 maxWidth='80'
                 width="40"
                 height="40"
@@ -47,7 +47,7 @@ class OpenResources extends Component {
             <FadeScrollComponentY className="item-img" delay="0.4">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-img-loading@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-img-loading@2x.png"
                 maxWidth='104'
                 width="52"
                 height="52"
@@ -61,7 +61,7 @@ class OpenResources extends Component {
             <div className="item-mask">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
                 maxWidth='80'
                 width="40"
                 height="40"
@@ -74,7 +74,7 @@ class OpenResources extends Component {
             <FadeScrollComponentY className="item-img" delay="0.5">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-res-coms@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-res-coms@2x.png"
                 maxWidth='104'
                 width="52"
                 height="52"
@@ -88,7 +88,7 @@ class OpenResources extends Component {
             <div className="item-mask">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
                 maxWidth='80'
                 width="40"
                 height="40"
@@ -101,7 +101,7 @@ class OpenResources extends Component {
             <FadeScrollComponentY className="item-img" delay="0.6">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-address@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-address@2x.png"
                 maxWidth='104'
                 width="52"
                 height="52"
@@ -115,7 +115,7 @@ class OpenResources extends Component {
             <div className="item-mask">
               <ImageMax
                 loading='lazy'
-                src="/images/open-resources/icon-group@2x.png"
+                src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
                 maxWidth='80'
                 width="40"
                 height="40"

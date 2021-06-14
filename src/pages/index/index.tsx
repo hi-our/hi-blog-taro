@@ -21,7 +21,7 @@ export default function Index() {
 
   return (
     <body>
-      <BlogPost />
+      <BlogPost posts={morePosts} />
     </body>
   )
 }
