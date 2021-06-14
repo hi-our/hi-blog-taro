@@ -1,5 +1,5 @@
 export default {
-  navigationBarTitleText: '首页',
+  navigationBarTitleText: '关于',
   navigationStyle: 'custom',
   usingComponents: {
     // title: '../../components/title/index'

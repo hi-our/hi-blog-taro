@@ -1,6 +1,7 @@
 import Taro from "@tarojs/taro";
 import { useEffect, useState } from 'react'
 import './index.styl'
+import Header from "components/header"
 import Banner from "./components/banner"
 import BlogPost from "./components/blog-post"
 import Introduction from "./components/introduction"
@@ -23,7 +24,8 @@ export default function Index() {
   const morePosts = allPosts.slice(1) || {}
 
   return (
-    <body>
+    <body className="page-home">
+      <Header />
       <Banner heroPost={heroPost} />
       <Introduction />
       <OpenResource />
