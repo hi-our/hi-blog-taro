@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "hi-blog-taro",
   "description": "小溪里博客的小程序版",
-  "appid": "wx4da048b15a1b46de",
+  "appid": "wxa9c82ff458c40f57",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -35,7 +35,7 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true,
+    "minifyWXSS": false,
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",

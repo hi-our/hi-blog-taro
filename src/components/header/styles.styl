@@ -1,0 +1,266 @@
+@keyframes header-logo-ani
+  0%, 100%
+    opacity 1
+    transform scale(1)
+  50%
+    opacity 0.85
+    transform scale(1.1)
+
+// 头部
+.header
+  position sticky
+  top -1px
+  z-index 10
+  padding 12px 16px;
+  background-color s('rgba(var(--str-color-bg-1), 0.8)')
+  transition background-color 0.35s ease-in-out
+  -webkit-backdrop-filter blur(4px)
+  backdrop-filter blur(4px)
+
+  .header-main
+    padding-top env(safe-area-inset-top)
+    display flex;
+    align-items center;
+    justify-content space-between;
+    max-width 1200px
+    margin: auto
+  
+  .logo
+    display: block;
+    width: 130px;
+    height: 60px;
+
+    a
+      display: block;
+      width 100%;
+      height 100%
+      background: url("https://www.xiaoxili.com/images/logo-white.png?imageView2/2/w/390") no-repeat;
+      background-size: contain;
+      text-indent: -9999px;
+      overflow: hidden;
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          animation:header-logo-ani 1.5s infinite none
+
+.header-main
+  // navbar 导航
+  .navigation-operation
+    display none
+    @media (hover: hover) and (pointer: fine)
+      &:hover
+        animation:header-logo-ani 1.5s infinite none 
+
+.navigation-operation
+  & > button
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: transparent;
+    display inline-block;
+    width 24px;
+    height 24px;
+    background-repeat no-repeat
+    background-size contain
+    outline none
+    cursor pointer
+
+    & + button
+      margin-left 43px
+  .language
+    background-image url("https://www.xiaoxili.com/images/icon-language.svg");  
+  .subscribe
+    background-image url("https://www.xiaoxili.com/images/icon-subscribe.svg");  
+
+.navigation-pc
+  display none
+
+  & > ul
+    display flex
+  li
+    margin-right 35px;
+    &:last-child
+      margin-right 0; 
+  @supports(gap:35px)
+    & > ul
+      gap 35px
+      li
+        margin-right 0
+
+.navigation-mobile li > a
+.navigation-pc li > a
+  position relative;
+  color #fff;
+  opacity 0.6
+  line-height 33px;
+  font-size 16px;
+  transition 0.3s ease-in-out
+
+  &:after
+    content "";
+    position absolute;
+    bottom -5px;
+    right 0;
+    left 0;
+    opacity 0
+    visibility hidden
+    width 0
+    margin auto;
+    background: #f3f3f3;
+    height 2px
+    border-radius 2px;
+    transition 0.3s ease
+    transform translate3d(0, 10px, 0)
+
+
+
+  &:hover
+  &.active
+    font-weight 500;
+    opacity 1
+    &::after
+      width 16px;
+      opacity 1
+      visibility visible
+      transform translate3d(0, 0, 0)
+
+// 导航杠杠的样式
+.navigation-toggle
+  position absolute
+  right 20px
+  top 17px
+  margin-top env(safe-area-inset-top)
+  z-index 100
+  display flex;
+  flex-flow column;
+  justify-content space-between;
+  width 44px;
+  height 44px;
+  transition all 0.5s;
+  background none
+  border none
+  outline none
+  .text
+    position absolute
+    overflow hidden
+    clip rect(0px, 0px, 0px, 0px)
+    height 1px
+    width 1px
+    margin -1px
+    padding 0px
+    border 0px
+  &:before
+  &:after
+    content ''
+    display block
+    position relative;
+    width 24px;
+    height 3px;
+    margin auto
+    background-color #fff;
+    border-radius 3px;
+    transition 0.5s;
+  
+  &:before
+    margin-top 15px
+  &:after
+    margin-bottom 15px
+  
+  &.active
+    &:before
+      transform translateY(6px) rotate(45deg)
+    &:after
+      transform  translateY(-5px) rotate(-45deg)
+
+// 导航菜单
+.navigation-pop
+  pointer-events none
+  touch-action none
+  position absolute;
+  top 0;
+  left 0;
+  height 100vh
+  right 0;
+  z-index 10;
+  padding 31px 31px 31px 40px;
+  box-sizing border-box;
+  transition: 0.5s;
+  opacity 0
+  &.active
+    opacity 1
+    pointer-events auto
+
+    .navigation-mobile li
+      transform translate3d(0, 0, 0)
+      &:nth-child(1)
+        transition-delay: 0.4s
+      &:nth-child(2)
+        transition-delay: 0.5s
+      &:nth-child(3)
+        transition-delay: 0.6s
+      &:nth-child(4)
+        transition-delay: 0.7s
+      &:nth-child(5)
+        transition-delay: 0.8s
+    
+    .navigation-operation
+      opacity 1
+      transition-delay 1.2s
+
+  .navigation-pop-btn
+    position absolute
+    left 0
+    width 100%
+    top 0
+    height 100%
+    padding 0
+    border none 
+    outline none
+    background-color var(--color-home-light)
+    transition background-color 0.5s
+    opacity 0.8
+    -webkit-backdrop-filter blur(8px)
+    backdrop-filter blur(8px)
+
+  .navigation-operation
+    opacity 0
+    transition: 0.4s
+    position relative
+  
+  .navigation-mobile
+    position relative
+    margin 38px 0 36px 0
+    padding-top env(safe-area-inset-top)
+    max-width 400px
+    
+    li
+      display block
+      margin-bottom 29px;
+      font-size 16px;
+      transform translate3d(-100%, 0, 0)
+      transition: 0.4s
+      &:last-child
+        margin-bottom 0;
+
+// 兼容568px - 1024px手机横屏宽度
+@media (min-width 768px)
+  // 隐常横杆图标
+  .navigation-toggle
+    display none; 
+  .header-main
+    .navigation-operation
+      display block; 
+
+
+    .navigation-pc
+      display block; 
+
+@media (min-width 1024px)
+  .header
+    padding-left 32px
+    padding-right 32px
+
+@media (min-width 1200px)
+  .header
+    padding-left 0
+    padding-right 0
+   

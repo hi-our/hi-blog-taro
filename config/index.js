@@ -1,11 +1,14 @@
+const alias = require('./alias')
+
 const config = {
   projectName: 'hi-blog-taro',
   date: '2021-6-14',
-  designWidth: 750,
+  designWidth: 375,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
-    828: 1.81 / 2
+    828: 1.81 / 2,
+    375: 2 / 1
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
@@ -15,6 +18,7 @@ const config = {
       pxtransformBlackList: [/page|h5|weui/]
     }]
   ],
+  alias,
   defineConstants: {
   },
   copy: {
@@ -29,7 +33,7 @@ const config = {
     debugReact: true,
     postcss: {
       pxtransform: {
-        enable: true
+        enable: false
       },
       url: {
         enable: true,
