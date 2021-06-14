@@ -33,7 +33,7 @@ const config = {
     debugReact: true,
     postcss: {
       pxtransform: {
-        enable: true
+        enable: false
       },
       url: {
         enable: true,

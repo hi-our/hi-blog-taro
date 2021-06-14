@@ -1,7 +1,8 @@
 import Taro from "@tarojs/taro";
 import { useEffect, useState } from 'react'
 import './index.styl'
-import BlogPost from "./components/blog-post";
+import BlogPost from "./components/blog-post"
+import Introduction from "./components/introduction"
 
 export default function Index() {
   const [allPosts, setAllPosts] = useState([])
@@ -21,7 +22,11 @@ export default function Index() {
 
   return (
     <body>
+      {/* <Banner heroPost={heroPost} noticeInView={noticeInView} /> */}
+      <Introduction />
+      {/* <OpenResource /> */}
       <BlogPost posts={morePosts} />
+      {/* <TechShare /> */}
     </body>
   )
 }
