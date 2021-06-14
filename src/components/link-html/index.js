@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro'
 
-function NavLink({ className, href = '', name = '', children = '', addHtml = true, isActive, style = {}, title = '' }) {
+function NavLink({ className, href = '', name = '', children = '', isActive, style = {}, title = '' }) {
 
   // console.log('href', href)
   // Must add passHref to Link
