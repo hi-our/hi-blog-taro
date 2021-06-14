@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import ModuleTitle from 'components/module-title'
 import ImageMax from "components/image-max"
+import LinkHtml from "components/link-html"
 
 import './styles.styl'
 
@@ -15,7 +16,7 @@ class TechSharing extends Component {
       <section className="tech-main" id='tech-sharing'>
         <ModuleTitle {...titleProps} />
         <div className="tech-content">
-          <a className="item" href="https://www.xiaoxili.com/slides/5-minapp-tabbar/">
+          <LinkHtml className="item" href="https://www.xiaoxili.com/slides/5-minapp-tabbar/">
             <div className="item-img" delay='0.1'>
               <ImageMax
                 loading='lazy'
@@ -39,8 +40,8 @@ class TechSharing extends Component {
                 className="item-icon-img"
               />
             </div>
-          </a>
-          <a className="item" href="https://www.xiaoxili.com/slides/2-minapp-liveroom/">
+          </LinkHtml>
+          <LinkHtml className="item" href="https://www.xiaoxili.com/slides/2-minapp-liveroom/">
             <div className="item-img" delay='0.2'>
               <ImageMax
                 loading='lazy'
@@ -64,8 +65,8 @@ class TechSharing extends Component {
                 className="item-icon-img"
               />
             </div>
-          </a>
-          <a className="item" href="https://www.xiaoxili.com/slides/1-svg-animation/">
+          </LinkHtml>
+          <LinkHtml className="item" href="https://www.xiaoxili.com/slides/1-svg-animation/">
             <div className="item-img" delay='0.3'>
               <ImageMax
                 loading='lazy'
@@ -89,7 +90,7 @@ class TechSharing extends Component {
                 className="item-icon-img"
               />
             </div>
-          </a>
+          </LinkHtml>
         </div>
       </section>
     )

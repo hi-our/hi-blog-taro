@@ -31,7 +31,7 @@ function Introduction() {
           </div>
           <h3>创意 Web 前端工程师</h3>
           <p>我是小溪里，沪江 CCtalk 前端开发工程师，前腾讯云云开发高级布道师，Taro 社区共建者，开发了 Hi 头像小程序，并著有技术小册《从 0 到 1 开发一个智能头像识别小程序》。在前端页面重构及用户体验优化方面有着深入的理解。</p>
-          <LinkHtml className="desc-content-more" href="/about" title='关于我'>About Me</LinkHtml>
+          <LinkHtml className="desc-content-more" href="/pages/about/index" title='关于我'>About Me</LinkHtml>
         </div>
       </div>
       {/* 个人简绍 特色 */}
