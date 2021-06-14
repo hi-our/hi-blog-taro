@@ -1,0 +1,158 @@
+html.mode-dark
+  .home-introduction
+    .desc-bitmap img
+      filter brightness(.6) contrast(1.2);
+    .feature > li >img
+      filter invert(1) hue-rotate(180deg)
+      
+.home-introduction
+  overflow hidden
+  padding 60px 0 0 
+
+  .icon-color-line
+    fill var(--color-title)
+    transition all 0.5s 0.2s
+  .icon-color-dot
+    fill var(--color-primary)
+    transition all 0.5s 0.2s
+
+  // 个人简绍 描述
+  .desc
+    .desc-bitmap
+      display block
+      width 100%
+      height auto
+      outline none
+      img
+        object-fit cover
+        transition: all 0.5s ease 0.2s
+    .desc-content
+      overflow hidden
+      padding 16px
+      color var(--color-title)
+      transition: all 0.5s ease 0.2s
+      
+      > h3
+        margin 40px 0 20px 0
+        font-size 24px
+        text-align center
+        font-weight normal
+        // letter-spacing 1px
+      > p
+        line-height 22px
+        font-size 16px
+        // letter-spacing 2px
+      .desc-content-more
+        float right
+        width 96px
+        line-height 32px
+        text-align center
+        margin 10px 0 17px 0
+        background-color var(--color-home-light)
+        position relative
+        transition: all 0.5s ease
+        font-size 16px
+        color #FFFFFF
+        outline none
+        border none
+        cursor pointer
+        z-index 1
+
+        &:after
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 100%;
+          top: 0;
+          right: 0;
+          z-index: -1;
+          background-color: var(--syntax-str);
+          transition: all 0.3s ease;
+
+        @media (hover: hover) and (pointer: fine)
+          &:hover
+            &:after
+              left: 0;
+              width: 100%;
+    // 个人简绍 特色
+  .feature
+    display flex
+    flex-wrap wrap
+    margin-bottom 72px
+    > li
+      width 33%
+      text-align center
+      &:nth-child(1)
+      &:nth-child(2)
+      &:nth-child(3)
+        margin-bottom 21px
+
+      >h3
+        font-size 36px
+        font-weight normal
+        color var(--color-title)
+        transition: all 0.5s ease 0.2s
+      >p
+        font-size 14px
+        font-weight normal
+        color var(--color-text)
+        transition: all 0.5s ease 0.2s
+
+@media (min-width 768px)
+  .home-introduction
+    padding 0 15px
+    .introduction-header
+      margin-top 60px
+      >h2
+        font-size 56px
+      >h3
+        letter-spacing 3px
+        transform translateY(-40px)
+     .desc
+       display flex
+       min-height 232px
+       .desc-bitmap, .desc-content
+         width: 50%;
+       .desc-content
+         padding 0 0 0 16px
+         >h3
+           margin  0 0 20px 0
+           text-align left
+         .desc-content-more
+           margin 20px 0 0 0
+     .feature
+       justify-content space-between
+       margin 47px 0 61px 0
+       > li
+         width auto
+         &:nth-child(1), &:nth-child(2), &:nth-child(3)
+          margin-bottom 0
+
+@media (min-width 1024px)
+  .home-introduction
+    padding 0 32px
+    .desc
+      min-height 303px
+      .desc-content
+        padding-left 32px
+        .desc-content-group
+          width 32px
+          height 15px
+          background url("/images/group.png") no-repeat 100%
+          margin 32px 0
+          cursor pointer
+    .feature
+        margin-bottom 105px
+
+@media (min-width 1200px)
+  .home-introduction
+    padding 0
+    max-width 1200px
+    margin auto
+    .desc
+      .desc-content
+        padding-left 60px
+        .desc-content-group
+          margin 29px 0 20px 0
+        .desc-content-more
+          margin-top 30px

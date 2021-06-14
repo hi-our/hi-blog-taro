@@ -1,0 +1,91 @@
+html.mode-dark
+  .tech-main
+    .item
+      .item-img
+      .item-mark
+        filter invert(1) hue-rotate(180deg)
+
+.tech-main
+  padding 60px 0
+        
+  .tech-content
+    padding 0 16px
+    max-width 1200px
+    margin 0 auto
+
+    .item
+      display block
+      text-align: center
+      position: relative
+      cursor: pointer
+      margin-bottom 20px
+
+      &:last-child
+        margin-bottom 0
+      
+      .item-img
+        display block
+        width: 100%;
+        height: auto
+      
+      .item-bar
+        position relative
+        margin: -24px auto 0
+        width: 230px
+        color var(--color-title)
+        background: var(--color-module-bar)
+        font-size 18px
+        border-radius: 4px
+        line-height: 48px
+        
+      .item-mark
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.4)
+        opacity: 0.3
+        display flex
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        opacity: 0
+        visibility hidden
+
+        .item-icon-img
+          margin: auto
+          
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          .item-mark
+            opacity: 0.4
+            visibility visible
+            transition: all 0.5s ease
+     
+
+// 宽度大于768px时
+@media  (min-width 768px)  
+  .tech-main
+    .tech-content
+      display: flex
+      justify-content: space-between
+
+      .item
+        width: 240px;
+
+// 屏幕尺寸大于1024时
+@media  (min-width 1024px)  
+  .tech-main
+    .tech-content
+      padding 0 32px
+      .item
+        width: 300px;
+        .item-bar
+          width: 266px;
+
+// 屏幕尺寸大于1200时
+@media  (min-width 1200px)  
+  .tech-main
+    .tech-content
+      padding 0
+      .item
+        width 380px

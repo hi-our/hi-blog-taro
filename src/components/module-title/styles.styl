@@ -1,0 +1,23 @@
+.module-title
+  text-align center
+  line-height 1.4
+  margin-bottom 50px
+
+  &:before
+    content: attr(data-sub-title);
+    color var(--color-title-light)
+    transition: all 0.5s ease
+    font-size 38px
+
+    @media (min-width 768px)
+      font-size 56px
+
+  h2
+    margin-top -40px
+    font-size 32px
+    color var(--color-title)
+    transition: all 0.5s ease
+
+    > strong
+      color var(--color-primary)
+      transition: all 0.5s ease

@@ -1,0 +1,149 @@
+html.mode-dark
+  .blog-post .blog-wrap .block-news
+    .pic
+      filter brightness(0.6) contrast(1.2)
+
+.blog-post
+  background-color var(--color-module-bg)
+  padding 50px 0
+
+  .blog-wrap
+    max-width 1200px
+    margin 0 auto
+    padding 0 16px
+
+    .block-news
+      cursor pointer
+      background-color var(--color-module-bar)
+      padding-bottom: 26px;
+
+      .pic
+        display block
+        height auto
+        width 100%
+
+      .title
+        margin 20px 16px 8px
+        font-size 18px
+        line-height 1.4
+        font-weight 400
+        color var(--color-title)
+
+      .info
+        padding 0 16px
+        line-height 1.4
+        font-size 16px
+        color var(--color-text)
+        display -webkit-box
+        overflow hidden
+        -webkit-box-orient vertical
+        text-overflow ellipsis
+        word-break break-all
+        -webkit-line-clamp 2
+
+    .block-list
+      flex 1
+      display flex
+      flex-direction column
+      justify-content space-between
+      .block-item
+        display block
+        // justify-content flex-start
+        // align-items center
+        margin-top 20px
+        padding 8px 0
+        cursor pointer
+        background-color var(--color-module-bar)
+
+        .date
+          padding 0 25px
+          text-align center
+
+          span
+            display block
+            font-size 24px
+            color var(--color-primary)
+            opacity 0.4
+            font-weight 700
+
+            & + span
+              font-size 18px
+
+        .line
+          width 1px
+          height 113px
+          background-color var(--color-primary)
+          opacity 0.4
+
+        .content
+          padding 0 16px
+
+          h3
+            padding 5px 0 14px
+            font-size 16px
+            color var(--color-title)
+            line-height 1.4
+
+          .info
+            display -webkit-box
+            overflow hidden
+            -webkit-box-orient vertical
+            text-overflow ellipsis
+            word-break break-all
+            -webkit-line-clamp 2
+            font-size 14px
+            color var(--color-text)
+            line-height 20px
+
+          .more
+            // float right
+            margin 8px 0 0 0
+            font-size 12px
+            color var(--color-title)
+            line-height 17px
+
+            &:after
+              content ''
+              display inline-block
+              background url(/images/icon-arraw-right.png) no-repeat
+              width 21px
+              height 4px
+              vertical-align middle
+              margin -3px 0 0 3px
+// 移动端横屏
+@media (min-width 768px)
+  .blog-post
+
+    .blog-wrap
+      display flex
+
+      .block-news
+        max-width 343px
+        margin-right 20px
+      .block-list
+        .block-item:first-child
+          margin-top 0
+
+// PC
+@media (min-width 1024px)
+  .blog-post
+
+    .blog-wrap
+      max-width 1200px
+      padding 0 32px
+      .block-news
+        max-width 460px
+        .pic
+          margin-bottom 35px
+
+
+      .block-list
+
+        .block-item
+          padding 18px 0
+// PC
+@media (min-width 1200px)
+  .blog-post
+
+    .blog-wrap
+      padding 0

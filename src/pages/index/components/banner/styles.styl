@@ -1,0 +1,301 @@
+html.mode-dark
+  .home-banner
+    img
+      filter brightness(.8) contrast(1.2);
+
+@keyframes titleAnimation {
+  0% {
+    background-position: -400%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+/* 
+          h2,
+          p
+            background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.1));
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: titleAnimation 10s -2s linear;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+ */
+.home-banner
+  padding 84px 0 24px
+  padding-top calc(env(safe-area-inset-top) + 84px) 
+  background linear-gradient(var(--color-home-dark),var(--color-home-light) )
+  transition: --color-home-light 0.3s linear, --color-home-dark 0.3s linear;
+
+  .icon-color-line
+    fill var(--color-title)
+    transition all 0.5s 0.2s
+  .icon-color-dot
+    fill var(--color-primary)
+    transition all 0.5s 0.2s
+
+  .banner-main
+    max-width 1200px
+    margin auto
+  // 线条
+  .line
+    background #fff
+    width 64px
+    height 1px
+    margin 30px auto
+  // 小程序创意动画
+  .animation
+    --color-title #fff
+
+    text-align center
+
+    .animation-module
+      display block
+      padding-top 24px
+      letter-spacing 1px
+      opacity 0.9
+
+      h2
+        font-size 28px
+        color var(--color-title)
+  
+      p
+        margin-top 16px
+        font-size 20px
+        color var(--color-title)
+  
+      .read-more
+        position relative
+        width 120px
+        line-height 36px
+        margin 16px auto 0
+        box-shadow 0 0 0 1px rgba(255, 255, 255, 1)
+        color #ffffff
+        outline none
+        background-color transparent
+        text-align center
+        cursor pointer
+        transition: 600ms ease all;
+
+        &:before
+        &:after
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 1px;
+          width: 0;
+          background #fff
+          box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+          transition: 400ms ease all;
+
+        &:after
+          right: inherit;
+          top: inherit;
+          left: 0;
+          bottom: 0;
+
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          opacity 1
+          // 效果不好
+          // h2, p
+          //   transition: 600ms ease all;
+          //   -webkit-box-reflect below -0.75em -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)))
+          .read-more
+            box-shadow 0 0 0 1px rgba(255, 255, 255, 0)
+            &:before
+            &:after
+              width: 100%;
+              transition: 800ms ease all;
+    
+
+    .animation-little
+      position relative
+      background-size contain
+      width 304px
+      height 277px
+      margin 29px auto 0
+      .parallax-inner
+        width 100%
+        height 100%
+        background-size auto 100%
+        background-repeat no-repeat
+      
+      picture, img
+        display block
+        width auto
+        height 100%
+        transition: all 0.5s ease 0.1s
+      .animation-bg
+        position absolute
+        left 0
+        right 0
+        top 0
+        bottom 0
+
+
+      .animation-earphone
+        position absolute
+        left 0
+        right 0
+        top 0
+        height (101 / 511 * 100)%
+      
+
+      .animation-gift
+        position absolute
+        left 0
+        right 0
+        bottom (65 / 511 * 100)%
+        height (101 / 511 * 100)%
+
+        picture
+          display flex
+          justify-content flex-end
+
+  // 小程序创意动画类别
+  .program-category
+    position relative
+    margin-top -20px
+    padding 0 16px
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+
+    li
+      width 47.8%
+      background-color var(--color-module-bg)
+      transition: all 0.5s ease 0.1s
+      
+      > a
+        display block
+        padding 16px
+      @media (max-width 767px)
+        &:nth-child(1),
+        &:nth-child(2)
+          margin-bottom 16px
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+          transform: translateY(-3px);
+          transition: .1s ease;
+          svg
+            transform scale(1.15)
+          h3
+            color var(--color-primary)
+
+      svg
+        transition: all 0.5s ease 0.1s
+  
+      h3
+        margin-top 8px
+        font-size 18px
+        font-weight 400
+        color var(--color-title)
+        transition: all 0.5s ease 0.2s
+        line-height 25px
+        &::after
+          content ""
+          display block
+          width 48px
+          height 1px
+          background-color var(--color-primary)
+          transition: all 0.5s ease
+          margin-top 4px
+    
+  
+      p
+        font-size 16px
+        font-weight 400
+        color var(--color-text)
+        transition: all 0.5s ease 0.2s
+        line-height 22px
+        margin-top 7px
+    
+// 兼容568px - 1024px手机横屏宽度
+@media (min-width 768px)
+  .home-banner
+    .line
+      margin-left 0
+
+    .animation
+      padding 0 16px
+      display flex
+      justify-content space-between
+      .animation-module
+        padding-top 0
+        flex 1
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+
+  
+      .animation-little
+        width 280px
+        height 233px
+        margin-right 5px
+
+        .animation-bg
+          height 100%
+  
+
+    .program-category
+      li
+        width 21.8%
+        margin-bottom 0
+
+// PC端
+@media (min-width 1024px)
+  .home-banner
+    margin-bottom 140px
+    .animation
+      padding 0 0 0 32px
+      align-items center
+      text-align left
+      .animation-module
+        align-items flex-start
+        h2
+          margin-top 0
+          font-size 46px
+          line-height 80px
+          // white-space nowrap
+    
+        p
+          margin 0
+          font-size 25px
+          color #f1f1f1
+    
+        .read-more
+          margin 46px 0
+          width 160px
+          line-height 48px
+    
+  
+      .animation-little
+        margin 0
+        width 511px
+        height 513px
+        background-size auto 100%
+  
+
+    .program-category
+      padding 0 32px
+      margin-bottom -140px
+      
+    
+// PC端
+@media (min-width 1200px)
+  .home-banner
+    .animation
+      padding 0
+      .animation-little
+        margin 0
+        width 564px
+        height 513px
+        background-size auto 100%

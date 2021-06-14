@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import './index.styl'
+import BlogPost from "./components/blog-post";
 
 export default class Index extends Component {
   state = {
@@ -18,7 +19,7 @@ export default class Index extends Component {
     const isFold = this.state.isFold
     return (
       <body>
-        Hello World
+        <BlogPost />
       </body>
     )
   }
