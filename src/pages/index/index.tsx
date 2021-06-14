@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import Taro, { useShareAppMessage } from "@tarojs/taro";
 import { useEffect, useState } from 'react'
 import './index.styl'
 import Header from "components/header"
@@ -22,6 +22,14 @@ export default function Index() {
 
   const heroPost = allPosts[0] || {}
   const morePosts = allPosts.slice(1) || {}
+
+  useShareAppMessage(() => {
+    return {
+      title: '小溪里博客',
+      path: '/pages/index/index',
+      imageUrl: 'https://image-hosting.xiaoxili.com/img/img/20201231/1942cc12adbcebcb940f59a3e6023252-3de225.png'
+    }
+  })
 
   return (
     <body className="page-home">

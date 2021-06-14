@@ -29,7 +29,7 @@ class TechSharing extends Component {
               />
             </div>
             <div className="item-bar">小程序 TabBar 创意动画</div>
-            <div className="item-mark">
+            {/* <div className="item-mark">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/icon-group@2x.png"
@@ -39,7 +39,7 @@ class TechSharing extends Component {
                 alt="链接"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </LinkHtml>
           <LinkHtml className="item" href="https://www.xiaoxili.com/slides/2-minapp-liveroom/">
             <div className="item-img" delay='0.2'>
@@ -54,7 +54,7 @@ class TechSharing extends Component {
               />
             </div>
             <div className="item-bar">小程序基础架构和功能优化</div>
-            <div className="item-mark">
+            {/* <div className="item-mark">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/icon-group@2x.png"
@@ -64,7 +64,7 @@ class TechSharing extends Component {
                 alt="链接"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </LinkHtml>
           <LinkHtml className="item" href="https://www.xiaoxili.com/slides/1-svg-animation/">
             <div className="item-img" delay='0.3'>
@@ -79,7 +79,7 @@ class TechSharing extends Component {
               />
             </div>
             <div className="item-bar">SVG动画研究的重要性</div>
-            <div className="item-mark">
+            {/* <div className="item-mark">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/icon-group@2x.png"
@@ -89,7 +89,7 @@ class TechSharing extends Component {
                 alt="SVG动画研究的重要性"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </LinkHtml>
         </div>
       </section>

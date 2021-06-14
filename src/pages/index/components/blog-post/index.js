@@ -24,7 +24,7 @@ export default function Index({ posts = [] }) {
         <div className="blog-wrap">
           <LinkHtml className={"block-news"} href={`/blog/posts/${heroPost.slug}`}>
             <div delay='0.1'>
-              <ImageMax loading='lazy' className="pic" src={heroPost.coverImage} alt={heroPost.title} maxWidth='920' />
+              {!!heroPost.coverImage && <ImageMax loading='lazy' className="pic" src={heroPost.coverImage} alt={heroPost.title} maxWidth='920' />}
               <h3 className="title">{heroPost.title}</h3>
               <p className="info">{heroPost.summary}</p>
             </div>

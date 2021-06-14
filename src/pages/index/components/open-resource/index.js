@@ -58,7 +58,7 @@ class OpenResources extends Component {
             <div className="item-line"></div>
             <h3>图片懒加载组件</h3>
             <p>react-better-image-cc</p>
-            <div className="item-mask">
+            {/* <div className="item-mask">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
@@ -68,7 +68,7 @@ class OpenResources extends Component {
                 alt="链接"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </a>
           <a className="item" href="https://www.xiaoxili.com/packages/react-ui-mode-cc/">
             <div className="item-img" delay="0.5">
@@ -85,7 +85,7 @@ class OpenResources extends Component {
             <div className="item-line"></div>
             <h3>融合响应式组件</h3>
             <p>react-ui-mode-cc</p>
-            <div className="item-mask">
+            {/* <div className="item-mask">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
@@ -95,7 +95,7 @@ class OpenResources extends Component {
                 alt="链接"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </a>
           <a className="item" href="https://www.xiaoxili.com/packages/react-address-picker-cc/">
             <div className="item-img" delay="0.6">
@@ -112,7 +112,7 @@ class OpenResources extends Component {
             <div className="item-line"></div>
             <h3>收货地址组件</h3>
             <p>react-address-picker</p>
-            <div className="item-mask">
+            {/* <div className="item-mask">
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/open-resources/icon-group@2x.png"
@@ -122,7 +122,7 @@ class OpenResources extends Component {
                 alt="链接"
                 className="item-icon-img"
               />
-            </div>
+            </div> */}
           </a>
         </div>
       </section>
