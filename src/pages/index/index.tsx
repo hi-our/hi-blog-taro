@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import './index.styl'
 import BlogPost from "./components/blog-post"
 import Introduction from "./components/introduction"
+import OpenResource from "./components/open-resource"
+import TechShare from "./components/tech-sharing"
 
 export default function Index() {
   const [allPosts, setAllPosts] = useState([])
@@ -24,9 +26,9 @@ export default function Index() {
     <body>
       {/* <Banner heroPost={heroPost} noticeInView={noticeInView} /> */}
       <Introduction />
-      {/* <OpenResource /> */}
+      <OpenResource />
       <BlogPost posts={morePosts} />
-      {/* <TechShare /> */}
+      <TechShare />
     </body>
   )
 }

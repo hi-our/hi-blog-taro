@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react'
-import ModuleTitle from '@components/module-title'
+import ModuleTitle from 'components/module-title'
+import ImageMax from "components/image-max"
+
 import './styles.styl'
-import ImageMax from "@components/image-max"
-import { FadeScrollComponentY } from "@components/fade-scroll"
 
 class TechSharing extends Component {
   render() {
@@ -16,16 +16,17 @@ class TechSharing extends Component {
         <ModuleTitle {...titleProps} />
         <div className="tech-content">
           <a className="item" href="https://www.xiaoxili.com/slides/5-minapp-tabbar/">
-            <FadeScrollComponentY className="item-img" delay='0.1'>
+            <div className="item-img" delay='0.1'>
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/tech-share/tab-bar@2x.png"
                 alt="小程序 TabBar 创意动画"
+                className='pic'
                 maxWidth={760}
                 width='380'
                 height='232'
               />
-            </FadeScrollComponentY>
+            </div>
             <div className="item-bar">小程序 TabBar 创意动画</div>
             <div className="item-mark">
               <ImageMax
@@ -40,16 +41,17 @@ class TechSharing extends Component {
             </div>
           </a>
           <a className="item" href="https://www.xiaoxili.com/slides/2-minapp-liveroom/">
-            <FadeScrollComponentY className="item-img" delay='0.2'>
+            <div className="item-img" delay='0.2'>
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/tech-share/fun-img@2x.png"
                 alt="小程序基础架构和功能优化"
+                className='pic'
                 maxWidth={760}
                 width='380'
                 height='232'
               />
-            </FadeScrollComponentY>
+            </div>
             <div className="item-bar">小程序基础架构和功能优化</div>
             <div className="item-mark">
               <ImageMax
@@ -64,16 +66,17 @@ class TechSharing extends Component {
             </div>
           </a>
           <a className="item" href="https://www.xiaoxili.com/slides/1-svg-animation/">
-            <FadeScrollComponentY className="item-img" delay='0.3'>
+            <div className="item-img" delay='0.3'>
               <ImageMax
                 loading='lazy'
                 src="https://www.xiaoxili.com/images/tech-share/svg-img@2x.png"
                 alt="小程序 TabBar 创意动画"
+                className='pic'
                 maxWidth={760}
                 width='380'
                 height='232'
               />
-            </FadeScrollComponentY>
+            </div>
             <div className="item-bar">SVG动画研究的重要性</div>
             <div className="item-mark">
               <ImageMax
