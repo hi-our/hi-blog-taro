@@ -1,24 +1,29 @@
 import Taro, { useShareAppMessage } from "@tarojs/taro";
 import { useEffect, useState } from 'react'
-import './index.styl'
-import Header from "components/header"
+import Header from 'components/header'
 import Banner from "./components/banner"
 import BlogPost from "./components/blog-post"
 import Introduction from "./components/introduction"
 import OpenResource from "./components/open-resource"
 import TechShare from "./components/tech-sharing"
 
+import './index.styl'
+
 export default function Index() {
-  const [allPosts, setAllPosts] = useState([])
+  const posts = Taro.getStorageSync("posts")
+  const [allPosts, setAllPosts] = useState(JSON.parse(posts) || [])
 
   useEffect(() => {
-    Taro.request({
-      url: 'https://www.xiaoxili.com/posts.json'
-    }).then(res => {
-      console.log('res', res)
-      setAllPosts(res.data)
-    })
-  }, [])
+    if (allPosts.length === 0) {
+      console.log('allPosts', allPosts.length)
+      Taro.request({
+        url: 'https://www.xiaoxili.com/posts.json'
+      }).then(res => {
+        console.log('res', res)
+        setAllPosts(res.data)
+      })
+    }
+  }, [allPosts.length])
 
   const heroPost = allPosts[0] || {}
   const morePosts = allPosts.slice(1) || {}

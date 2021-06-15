@@ -2,33 +2,33 @@ import React from 'react'
 import './styles.styl'
 import Link from '../link-html'
 
-export default function Header({ navName }) {
-  const [isOpen, setIsOpen ] = React.useState(false)
+export default function Header() {
+  // const [isOpen, setIsOpen ] = React.useState(false)
 
-  const renderMainNav = (isPC) => {
+  // const renderMainNav = (isPC) => {
 
-    return (
-      <nav className={isPC ? 'navigation-pc' : 'navigation-mobile'}>
-        <ul>
-          <li>
-            <Link href='/' isActive={navName === 'home'} addHtml={false}>首页</Link>
-          </li>
-          <li>
-            <Link href='/blog' isActive={navName === 'blog'} title="小溪里博客">博客</Link>
-          </li>
-          <li>
-            <a href='/hi-face' title="Hi头像教程">小册</a>
-          </li>
-          {/* <li>
-            <Link href='/about' title="关于我们" isActive={navName === 'about'}>关于</Link>
-          </li> */}
-          <li>
-            <Link href='https://www.buerxue.com' title='设计师不二雪作品集'>小雪作品</Link>
-          </li>
-        </ul>
-      </nav>
-    )
-  }
+  //   return (
+  //     <nav className={isPC ? 'navigation-pc' : 'navigation-mobile'}>
+  //       <ul>
+  //         <li>
+  //           <Link href='/' isActive={navName === 'home'} addHtml={false}>首页</Link>
+  //         </li>
+  //         <li>
+  //           <Link href='/blog' isActive={navName === 'blog'} title="小溪里博客">博客</Link>
+  //         </li>
+  //         <li>
+  //           <a href='/hi-face' title="Hi头像教程">小册</a>
+  //         </li>
+  //         {/* <li>
+  //           <Link href='/about' title="关于我们" isActive={navName === 'about'}>关于</Link>
+  //         </li> */}
+  //         <li>
+  //           <Link href='https://www.buerxue.com' title='设计师不二雪作品集'>小雪作品</Link>
+  //         </li>
+  //       </ul>
+  //     </nav>
+  //   )
+  // }
 
 
   return (
