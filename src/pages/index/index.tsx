@@ -1,6 +1,7 @@
 import Taro, { useShareAppMessage } from "@tarojs/taro";
 import { useEffect, useState } from 'react'
 import Header from 'components/header'
+import Footer from 'components/footer'
 import Banner from "./components/banner"
 import BlogPost from "./components/blog-post"
 import Introduction from "./components/introduction"
@@ -44,6 +45,7 @@ export default function Index() {
       <OpenResource />
       <BlogPost posts={morePosts} />
       <TechShare />
+      <Footer />
     </body>
   )
 }

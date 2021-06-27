@@ -8,6 +8,6 @@ export default function ImgWithMax ({
   if (!src.includes('http')) src = 'https://www.xiaoxili.com' + src
   src = src + `?imageView2/2/w/${maxWidth}/format/webp/ignore-error/1`
   return (
-    <img src={src} className={className} mode={mode} webp {...delegated} />
+    <img src={src} lazyLoad={true} className={className} mode={mode} webp {...delegated} />
   );
 };

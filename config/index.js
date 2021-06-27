@@ -29,7 +29,7 @@ const config = {
   framework: 'react',
   mini: {
     enableSourceMap: false,
-    debugReact: true,
+    debugReact: false,
     postcss: {
       pxtransform: {
         enable: false

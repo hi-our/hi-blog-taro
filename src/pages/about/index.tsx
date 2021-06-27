@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Header from 'components/header'
+import Footer from 'components/footer'
 
 import './styles.styl'
 
@@ -27,7 +28,7 @@ export default function About() {
             <div className="module-main">
               <ul className="member-list">
                 <li className="member-item">
-                  <img src="https://image-hosting.xiaoxili.com/img/20200712183315.jpg" alt="盛瀚钦" width="100" height="152" />
+                  <img lazyLoad={true} src="https://image-hosting.xiaoxili.com/img/20200712183315.jpg" alt="盛瀚钦" width="100" height="152" />
                   <div className="item-main">
                     <h3>盛瀚钦</h3>
                     <p>创始人</p>
@@ -35,7 +36,7 @@ export default function About() {
                   </div>
                 </li>
                 <li className="member-item">
-                  <img src="https://image-hosting.xiaoxili.com/img/20200712183316.jpg" alt="盛瀚钦" width="100" height="152" />
+                  <img lazyLoad={true} src="https://image-hosting.xiaoxili.com/img/20200712183316.jpg" alt="盛瀚钦" width="100" height="152" />
                   <div className="item-main">
                     <h3>李欢</h3>
                     <p>Web前端</p>
@@ -43,7 +44,7 @@ export default function About() {
                   </div>
                 </li>
                 <li className="member-item">
-                  <img src="https://image-hosting.xiaoxili.com/img/20200712183314.jpg" alt="盛瀚钦" width="100" height="152" />
+                  <img lazyLoad={true} src="https://image-hosting.xiaoxili.com/img/20200712183314.jpg" alt="盛瀚钦" width="100" height="152" />
                   <div className="item-main">
                     <h3>王宝国</h3>
                     <p>产品经理</p>
@@ -65,7 +66,7 @@ export default function About() {
         </div>
 
       </div>
-
+      <Footer />
     </body>
   )
 }

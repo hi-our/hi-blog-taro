@@ -1,0 +1,139 @@
+.footer
+  background-color var(--color-home-dark)
+  padding 25px
+
+  .footer-design
+    margin 8px 0
+    color #fff
+    font-weight bold
+    .link
+      display inline-block
+    img
+      vertical-align middle
+      width 130px
+      height 60px
+
+  .footer-main
+    max-width 1200px
+    margin 0 auto
+
+  .footer-core
+
+    .footer-logo
+      display: block;
+      width: 130px;
+      height: 60px;
+      background: url("https://www.xiaoxili.com/images/logo-blue.png?imageView2/2/w/284") no-repeat;
+      background-size: contain;
+      text-indent: -9999px;
+      overflow: hidden;
+      
+    > p
+      font-size 16px
+      color #fff
+      line-height 22px
+      margin 13px 0 20px
+
+  .footer-links
+    dl
+      display flex
+      margin-bottom 20px
+      align-items baseline
+
+      &:last-child
+        margin-bottom 0
+      
+      dt
+        font-size 16px
+        font-weight bold
+        color #fff
+        line-height 22px
+        margin-right 10px
+      
+      dd
+        margin-right 8px
+        font-size 12px
+        color #fff
+        line-height 17px
+        a
+          color #fff
+          font-weight 300
+
+  .footer-copyright {
+    max-width 1200px
+    margin 0 auto
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+
+    a {
+      color: #fff;
+    }
+
+    .footer-gongan:before {
+      content ''
+      display inline-block
+      width 20px
+      height 20px
+      background url(https://www.xiaoxili.com/images/beian-gongan.png) no-repeat
+      vertical-align middle
+      margin-right 5px
+    }
+  }
+
+// 响应式
+// 兼容568px - 1024px手机横屏宽度
+@media (min-width 768px)
+  .footer-main
+    display flex
+    justify-content space-between
+    align-items center
+
+    .footer-logo
+      text-align center
+      letter-spacing 1px
+      img
+        height 58px
+      
+      span
+        margin-bottom 0
+    
+    .footer-links
+      display flex
+
+      dl
+        display block
+        margin-bottom 0
+        margin-right 60px
+        &:last-child
+          margin-right 0  
+
+        dt, dd
+          margin-right 0
+        
+        dt
+          margin-bottom 14px
+        
+        dd
+          font-size 16px
+          margin-bottom 10px
+          &:last-child
+            margin-bottom 0
+
+  .footer
+    .footer-copyright
+      text-align: center;
+      > br 
+        display: none;
+
+
+@media (min-width 950px)
+  .footer
+    padding-left 32px
+    padding-right 32px
+
+// PC端
+@media (min-width 1200px)
+  .footer
+    padding 20px 0
