@@ -4,6 +4,11 @@ module.exports = {
   },
   defineConstants: {
   },
-  mini: {},
+  mini: {
+    // webpackChain(chain) {
+    //  chain.plugin('analyzer')
+    //         .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+    // }
+  },
   h5: {}
 }

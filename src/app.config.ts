@@ -9,6 +9,7 @@ export default {
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black',
-    pageOrientation: "auto"
+    pageOrientation: "auto",
+    resizable: "true"
   }
 }

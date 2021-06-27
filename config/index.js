@@ -12,7 +12,6 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['@tarojs/plugin-html'],
   plugins: [
     ['@tarojs/plugin-html', {
       pxtransformBlackList: [/page|h5|weui/]
@@ -30,7 +29,7 @@ const config = {
   framework: 'react',
   mini: {
     enableSourceMap: false,
-    debugReact: true,
+    debugReact: false,
     postcss: {
       pxtransform: {
         enable: false
